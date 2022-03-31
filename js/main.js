@@ -6,8 +6,13 @@ $fortaleza= document.getElementById("fortalezas");
 $oportunidad= document.getElementById("oportunidad");
 $debilidades= document.getElementById("devilidades");
 $amenzas= document.getElementById("amenazas");
-
 $contenido2= document.getElementById("contenido2");
+$obj1= document.getElementById("obj1");
+$obj2= document.getElementById("obj2");
+$obj3= document.getElementById("obj3");
+$contenido3= document.getElementById("contenido3");
+
+
 
 
 
@@ -98,7 +103,7 @@ $amenzas.addEventListener("click",e=>{
     $debilidades.classList.remove('active');
     
 
-    $contenido2.innerHTML=`<div class="list-group">
+    $contenido2.innerHTML=` <div class="list-group">
     <a href="#!" class="list-group-item list-group-item-action list-group-item-danger">Situación económico del país no incentiva inversión/gastos adicionales;</a>
     <a href="#!" class="list-group-item list-group-item-action list-group-item-danger">Empresas con mal servicio a bajos costos;</a>
     <a href="#!" class="list-group-item list-group-item-action list-group-item-danger">Reclutamiento externo permanente/migración </a>
@@ -106,4 +111,27 @@ $amenzas.addEventListener("click",e=>{
     <a href="#!" class="list-group-item list-group-item-action list-group-item-danger">Marca no reconocida en el mercado (recién lanzamiento)</a>
  
     </div>`;
+    
+});
+// Botones para los Objetivos
+
+$obj1.addEventListener("click",e=>{
+  $obj1.classList.add('active');
+  $obj2.classList.remove('active');
+  $obj3.classList.remove('active');
+  $contenido3.innerHTML=`Obtener utilidad neta de L. 800,000.00 en plazo de 5 años, que permita recuperar la inversión a los accionistas e incrementar el capital de PROTAL.`;
+})
+
+$obj2.addEventListener("click",e=>{
+  $obj2.classList.add('active');
+  $obj1.classList.remove('active');
+  $obj3.classList.remove('active');
+  $contenido3.innerHTML=`Diversificar los servicios de vigilancia y seguridad física, que permitan incrementar en un 10% el número de nuevos clientes en un plazo de 12 meses.`;
+})
+
+$obj3.addEventListener("click",e=>{
+  $obj3.classList.add('active');
+  $obj1.classList.remove('active');
+  $obj2.classList.remove('active');
+  $contenido3.innerHTML=`Lograr un crecimiento de tres clientes nuevos semanalmente, en un plazo de 6 meses. `;
 })
