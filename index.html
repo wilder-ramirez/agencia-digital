@@ -18,7 +18,7 @@
         <div class="container my-1">
             <!-- LOGO DE LA EMPRESA -->
             <a href="index.html" class="navbar-brand">
-                <img src="img/digitalArt.png" alt="logo" class="img-fluid">
+                <img src="img/logo.png" alt="logo" class="img-fluid">
             </a>
 
             <!-- BOTTON RESPONSIVO PARA MENU HAMBURGUESA -->
@@ -74,14 +74,20 @@
         <div class="jumbotron  rounded-0 pb-5">
             <h1 class="display-4">
                 <strong>
-                    Creatividad sin Límites
+                  PROTAL 
                 </strong>
+                Protección Total
             </h1>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus quidem quae consectetur eius ratione.
+            <p class="lead animar">
+                “NUESTRA PRIORIDAD: SU PAZ Y TRANQUILIDAD”
             </p>
 
-            <a href="#" class="btn btn-primary btn-lg" role="button">Más Información</a>
+            <!-- <a href="#" class="btn btn-primary btn-lg" role="button">Más Información</a> -->
+
+            <button class="btn btn-primary btn-lg" 
+                    data-toggle="modal" data-target="#exampleModalCenter">Más Información
+            </button>
+
         </div>
         </section>
 
@@ -101,13 +107,16 @@
                         eius est corrupti repudiandae doloremque asperiores?
                         </p>
 
-                        <button class="btn btn-outline-primary btn-lg text-center">
-                            Más Información
+                        <button class="btn btn-primary btn-lg" 
+                        data-toggle="modal" data-target="#foda">
+                            Ver FODA
                         </button>
+
+                 
                     </div>
 
                     <div class="col-sm-12 col-md-6">
-                        <img src="img/blurred-background-coffee-cup-contemporary-908284.jpg" 
+                        <img src="img/seguridad-privada.jpg" 
                         alt="imagen-blue" class="img-fluid img-thumbnail ">
                     </div>
 
@@ -253,6 +262,86 @@
 
         </section>
 
+
+            <!-- seccion de modal -->
+
+            <!-- Modal Mision, vision y valores  -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Misión</h5> -->
+               
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a id="mision" class="nav-link  font-weight-bold text-black-50" href="#!">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="vision" class="nav-link  font-weight-bold text-black-50" href="#!">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="valores" class="nav-link font-weight-bold text-black-50" href="#!">Valores</a>
+                    </li>
+                  </ul>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div id="contenido" class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+             <!--Fin Modal Mision, vision y valores  -->
+        
+                 <!-- Modal FODA  -->
+        <div class="modal fade" id="foda" tabindex="-1" role="dialog" aria-labelledby="foda" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Misión</h5> -->
+               
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a id="fortalezas" class="nav-link  font-weight-bold text-black-50" href="#!">Fortalezas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="oportunidad" class="nav-link  font-weight-bold text-black-50" href="#!">Oportunidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="devilidades" class="nav-link font-weight-bold text-black-50" href="#!">Debilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="amenazas" class="nav-link font-weight-bold text-black-50" href="#!">Amenzas</a>
+                      </li>
+                  </ul>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div id="contenido2" class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+             <!-- Modal FODA  -->
+        
+        <!-- Fin de seccion de modal -->
+
         <!-- FOOTER O PIE DE PAGINA -->
         <footer id="contacto">
             <section id="footer" class="llamado-accion">
@@ -346,5 +435,6 @@
             }
         })
     </script>
+    <script  src="js/main.js"></script>
 </body>
 </html>
